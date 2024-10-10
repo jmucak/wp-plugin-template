@@ -4,8 +4,87 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d070178755c320c69f93ee4800660ef",
-    "packages": [],
+    "content-hash": "ac87fd6e84da4a3a74008244f6c78b55",
+    "packages": [
+        {
+            "name": "jmucak/wp-asset-service-pack",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jmucak/wp-asset-service-pack.git",
+                "reference": "a42931295f99bd313ef1453d50654ad5c8e7bad0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jmucak/wp-asset-service-pack/zipball/a42931295f99bd313ef1453d50654ad5c8e7bad0",
+                "reference": "a42931295f99bd313ef1453d50654ad5c8e7bad0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "jmucak\\wpAssetServicePack\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josip Mucak"
+                }
+            ],
+            "description": "Asset service helper",
+            "support": {
+                "issues": "https://github.com/jmucak/wp-asset-service-pack/issues",
+                "source": "https://github.com/jmucak/wp-asset-service-pack/tree/v1.0.0"
+            },
+            "time": "2024-10-07T13:44:01+00:00"
+        },
+        {
+            "name": "jmucak/wp-template-loader-pack",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jmucak/wp-template-loader-pack.git",
+                "reference": "0e16f6a6c2e2654777766d2cd9db195334afdcb1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jmucak/wp-template-loader-pack/zipball/0e16f6a6c2e2654777766d2cd9db195334afdcb1",
+                "reference": "0e16f6a6c2e2654777766d2cd9db195334afdcb1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "jmucak\\wpTemplateLoaderPack\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josip Mucak"
+                }
+            ],
+            "description": "WP template loader",
+            "support": {
+                "issues": "https://github.com/jmucak/wp-template-loader-pack/issues",
+                "source": "https://github.com/jmucak/wp-template-loader-pack/tree/v1.0.0"
+            },
+            "time": "2024-10-02T12:44:15+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",

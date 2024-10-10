@@ -1,5 +1,7 @@
 {
   "require": {
+    "jmucak/wp-template-loader-pack": "^1.0",
+    "jmucak/wp-asset-service-pack": "^1.0"
   },
   "autoload": {
     "files": [

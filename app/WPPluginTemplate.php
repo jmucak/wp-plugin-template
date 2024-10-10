@@ -2,13 +2,14 @@
 
 namespace wpPluginTemplate;
 
+use wpPluginTemplate\providers\AssetProvider;
+
 class WPPluginTemplate {
-	public function init() : void {
-		add_action( 'wp_enqueue_scripts', array( $this, 'add_scripts' ) );
+	public function init(): void {
+		$this->register_services();
 	}
 
-	public function add_scripts(): void {
-		wp_enqueue_style( PLUGIN_SLUG_SLUG, PLUGIN_SLUG_LOCAL_URL . 'static/dist/style.css', null, '1.0.0', false );
-		wp_enqueue_script( PLUGIN_SLUG_SLUG, PLUGIN_SLUG_LOCAL_URL . 'static/dist/bundle.js', null, '1.0.0', true );
+	private function register_services(): void {
+		( new AssetProvider() )->register();
 	}
 }

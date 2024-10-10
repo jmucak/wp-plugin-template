@@ -1,5 +1,3 @@
-import TestComponent from "./components/TestComponent";
-
 const ready = (callback) => {
     if (document.readyState !== "loading") {
         /**
@@ -23,14 +21,7 @@ const ready = (callback) => {
     }
 };
 
-
 /**
  * Document ready callback
  */
-ready(() => {
-    /**
-     * COMPONENTS INIT
-     */
-
-    const testComponent = new TestComponent();
-});
+ready(() => {});
