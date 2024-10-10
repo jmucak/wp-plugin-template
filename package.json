@@ -8,8 +8,7 @@
     "build": "prettier --write 'static/**/*.{scss,js}' && webpack --mode=production",
     "dev": "webpack --mode development --watch",
     "format": "prettier --write 'static/**/*.{scss,js}'",
-    "lint:scss": "stylelint 'static/**/*.scss'",
-    "prepare": "cd .. && cd .. && husky install"
+    "lint:scss": "stylelint 'static/**/*.scss'"
   },
   "browserslist": [
     "defaults"
