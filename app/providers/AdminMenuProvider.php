@@ -6,8 +6,11 @@ use wpPluginTemplate\controllers\PageController;
 
 class AdminMenuProvider {
 	private string $capability = 'manage_options';
+	private string $plugin_slug = '';
 
 	public function register(): void {
+		$this->plugin_slug = ConfigProvider::get_instance()->get_plugin_slug();
+
 		$this->register_main_page();
 		$this->register_sub_page();
 	}
@@ -20,7 +23,7 @@ class AdminMenuProvider {
 			'WP plugin template Menu page',
 			'WP plugin template menu page title',
 			$this->capability,
-			PLUGIN_SLUG_SLUG,
+			$this->plugin_slug,
 			array( new PageController(), 'get_main_view' ),
 			'dashicons-chart-pie',
 			100
@@ -32,11 +35,11 @@ class AdminMenuProvider {
 	 */
 	private function register_sub_page(): void {
 		add_submenu_page(
-			PLUGIN_SLUG_SLUG,
+			$this->plugin_slug,
 			'WP plugin template Sub page',
 			'WP plugin template Sub page title',
 			$this->capability,
-			PLUGIN_SLUG_SLUG . '-submenu',
+			$this->plugin_slug . '-submenu',
 			array( new PageController(), 'get_sub_menu_view' ),
 			100
 		);

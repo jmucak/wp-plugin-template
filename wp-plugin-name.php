@@ -30,22 +30,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'PLUGIN_SLUG_LOCAL_PATH', plugin_dir_path( __FILE__ ) );
-define( 'PLUGIN_SLUG_LOCAL_URL', plugin_dir_url( __FILE__ ) );
-define( 'PLUGIN_SLUG_BASENAME', plugin_basename( __FILE__ ) );
-define( 'PLUGIN_SLUG_SLUG', 'plugin-slug' );
-
 if ( ! file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 	add_action( 'admin_notices', function () {
 		?>
-		<div class="notice notice-error">
-			<h2>Missing <i>vendor/autoloader.php</i></h2>
-			<p>
-				<strong>
-					You are missing composer autoload. Please run <i>composer install</i> in root of your project.
-				</strong>
-			</p>
-		</div>
+        <div class="notice notice-error">
+            <h2>Missing <i>vendor/autoloader.php</i></h2>
+            <p>
+                <strong>
+                    You are missing composer autoload. Please run <i>composer install</i> in root of your project.
+                </strong>
+            </p>
+        </div>
 		<?php
 	} );
 
@@ -54,4 +49,8 @@ if ( ! file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-(new WPPluginTemplate())->init();
+( new WPPluginTemplate() )->init( array(
+	'plugin_path'     => plugin_dir_path( __FILE__ ),
+	'plugin_url'      => plugin_dir_url( __FILE__ ),
+	'plugin_basename' => plugin_basename( __FILE__ ),
+) );

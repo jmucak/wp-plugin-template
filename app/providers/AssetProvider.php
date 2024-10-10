@@ -6,9 +6,11 @@ use jmucak\wpAssetServicePack\AssetService;
 
 class AssetProvider {
 	public function register(): void {
+		$config_provider = ConfigProvider::get_instance();
+
 		$asset_service = new AssetService( array(
-			'base_url'  => PLUGIN_SLUG_LOCAL_URL . '/static/',
-			'base_path' => PLUGIN_SLUG_LOCAL_PATH . '/static/',
+			'base_url'  => $config_provider->get_plugin_url() . '/static/',
+			'base_path' => $config_provider->get_plugin_path() . '/static/',
 		) );
 
 //		$asset_service->register_site_assets( $this->get_site_assets_config() );
