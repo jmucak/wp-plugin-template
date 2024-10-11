@@ -1,10 +1,10 @@
 <?php
 
-namespace wpPluginTemplate;
+namespace WpPluginTemplate;
 
-use wpPluginTemplate\providers\AdminMenuProvider;
-use wpPluginTemplate\providers\AssetProvider;
-use wpPluginTemplate\providers\ConfigProvider;
+use WpPluginTemplate\providers\AdminMenuProvider;
+use WpPluginTemplate\providers\AssetProvider;
+use WpPluginTemplate\providers\ConfigProvider;
 
 class WPPluginTemplate {
 	public function init( array $config = array() ): void {

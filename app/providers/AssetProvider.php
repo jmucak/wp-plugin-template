@@ -1,6 +1,6 @@
 <?php
 
-namespace wpPluginTemplate\providers;
+namespace WpPluginTemplate\providers;
 
 use jmucak\wpAssetServicePack\AssetService;
 

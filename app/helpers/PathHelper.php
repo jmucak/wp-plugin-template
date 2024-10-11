@@ -1,6 +1,6 @@
 <?php
 
-namespace wpPluginTemplate\helpers;
+namespace WpPluginTemplate\helpers;
 
 use wpPluginTemplate\providers\ConfigProvider;
 

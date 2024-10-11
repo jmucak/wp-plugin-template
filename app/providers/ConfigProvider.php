@@ -1,6 +1,6 @@
 <?php
 
-namespace wpPluginTemplate\providers;
+namespace WpPluginTemplate\providers;
 
 class ConfigProvider {
 	protected static ?ConfigProvider $instance = null;

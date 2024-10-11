@@ -1,6 +1,6 @@
 <?php
 
-namespace wpPluginTemplate\controllers;
+namespace WpPluginTemplate\controllers;
 
 use jmucak\wpTemplateLoaderPack\TemplateLoader;
 use wpPluginTemplate\helpers\PathHelper;
