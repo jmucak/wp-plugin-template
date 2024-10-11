@@ -3,7 +3,7 @@
 namespace WpPluginTemplate\controllers;
 
 use jmucak\wpTemplateLoaderPack\TemplateLoader;
-use wpPluginTemplate\helpers\PathHelper;
+use WpPluginTemplate\helpers\PathHelper;
 
 class PageController {
 	public function get_main_view(): void {

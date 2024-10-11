@@ -2,7 +2,7 @@
 
 namespace WpPluginTemplate\helpers;
 
-use wpPluginTemplate\providers\ConfigProvider;
+use WpPluginTemplate\providers\ConfigProvider;
 
 class PathHelper {
 	public static function get_partial_path( string $path ): string {

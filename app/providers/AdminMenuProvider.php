@@ -2,7 +2,7 @@
 
 namespace WpPluginTemplate\providers;
 
-use wpPluginTemplate\controllers\PageController;
+use WpPluginTemplate\controllers\PageController;
 
 class AdminMenuProvider {
 	private string $capability = 'manage_options';

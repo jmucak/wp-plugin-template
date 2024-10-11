@@ -24,7 +24,7 @@
  */
 
 
-use wpPluginTemplate\WPPluginTemplate;
+use WpPluginTemplate\WPPluginTemplate;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
